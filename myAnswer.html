@@ -1,0 +1,36 @@
+<html>
+<head>
+</head>
+<body>
+<input type="text" id="first">
+*
+<input type="text" id="second">
+>
+<input type="text" id="third">
+<input type="button" value="Check" onclick="Check()">
+
+<script>
+function Check(){
+var firstnumber=document.getElementById("first").value;
+var secondnumber=document.getElementById("second").value;
+var thirdnumber=document.getElementById("third").value;
+	if (firstnumber == '' || secondnumber == '' || thirdnumber == ''){
+		alert('Inputs could not be blank')
+	}
+	else if (isNaN(firstnumber) || isNaN(secondnumber) || isNaN(thirdnumber)){
+	alert('Inputs should be numbers')
+	}
+	else {
+		if ((firstnumber * secondnumber) > thirdnumber){
+			alert( firstnumber + '*' + secondnumber + '>' + thirdnumber + ' is true!')
+		}
+		else {
+			alert( firstnumber + '*' + secondnumber + '>' + thirdnumber + ' is false!') 
+		}
+	}
+}
+</script>
+
+<p><a href="https://github.com/ks3r/labtest.git">Git</a></p>
+</body>
+</html>
